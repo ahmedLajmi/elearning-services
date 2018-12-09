@@ -1,0 +1,14 @@
+server:
+  port: 8222
+
+zuul:
+  routes:
+    candidate:
+      path: /candidate/**
+      serviceId: candidate-service
+    formation:
+      path: /formation/**
+      serviceId: formation-service
+    inscription:
+      path: /inscription/**
+      serviceId: inscription-service
